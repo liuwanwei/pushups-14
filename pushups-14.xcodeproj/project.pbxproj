@@ -14,10 +14,11 @@
 		FBE8438125BFB70200A2764F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE8438025BFB70200A2764F /* Assets.xcassets */; };
 		FBE8438425BFB70200A2764F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE8438225BFB70200A2764F /* LaunchScreen.storyboard */; };
 		FBE8438725BFB70200A2764F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE8438625BFB70200A2764F /* main.m */; };
+		FBE8439225BFB76700A2764F /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE8439125BFB76700A2764F /* Schedule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FBE8437125BFB70000A2764F /* pushups-14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pushups-14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE8437125BFB70000A2764F /* 坚持14天.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "坚持14天.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE8437425BFB70000A2764F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBE8437525BFB70000A2764F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FBE8437725BFB70000A2764F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +30,8 @@
 		FBE8438325BFB70200A2764F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE8438525BFB70200A2764F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE8438625BFB70200A2764F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBE8439025BFB76700A2764F /* Schedule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		FBE8439125BFB76700A2764F /* Schedule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +56,7 @@
 		FBE8437225BFB70000A2764F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBE8437125BFB70000A2764F /* pushups-14.app */,
+				FBE8437125BFB70000A2764F /* 坚持14天.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +64,7 @@
 		FBE8437325BFB70000A2764F /* pushups-14 */ = {
 			isa = PBXGroup;
 			children = (
+				FBE8438E25BFB74100A2764F /* models */,
 				FBE8437425BFB70000A2764F /* AppDelegate.h */,
 				FBE8437525BFB70000A2764F /* AppDelegate.m */,
 				FBE8437725BFB70000A2764F /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				FBE8438625BFB70200A2764F /* main.m */,
 			);
 			path = "pushups-14";
+			sourceTree = "<group>";
+		};
+		FBE8438E25BFB74100A2764F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8439025BFB76700A2764F /* Schedule.h */,
+				FBE8439125BFB76700A2764F /* Schedule.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +106,7 @@
 			);
 			name = "pushups-14";
 			productName = "pushups-14";
-			productReference = FBE8437125BFB70000A2764F /* pushups-14.app */;
+			productReference = FBE8437125BFB70000A2764F /* 坚持14天.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE8439225BFB76700A2764F /* Schedule.m in Sources */,
 				FBE8437C25BFB70000A2764F /* ViewController.m in Sources */,
 				FBE8437625BFB70000A2764F /* AppDelegate.m in Sources */,
 				FBE8438725BFB70200A2764F /* main.m in Sources */,
@@ -294,12 +308,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD8763N3M5;
 				INFOPLIST_FILE = "pushups-14/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "buddysoft.cn.pushups-14";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "坚持14天";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -312,12 +327,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD8763N3M5;
 				INFOPLIST_FILE = "pushups-14/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "buddysoft.cn.pushups-14";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "坚持14天";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
